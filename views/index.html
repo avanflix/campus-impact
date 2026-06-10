@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Impact — Creating What's Next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<style>
+  .phone-screen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 36px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .reel-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .reel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.75),
+        transparent 40%,
+        rgba(0, 0, 0, 0.2));
+  }
+
+  .reel-info {
+    margin-top: auto;
+    color: white;
+  }
+
+  .reel-tag {
+    display: inline-block;
+    font-weight: 600;
+    color: #00d4ff;
+    margin-bottom: 8px;
+  }
+
+  .reel-actions {
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+</style>
+
+<body>
+
+  <!-- Reel Strip Decoration -->
+  <div class="reel-strip reel-strip-left"></div>
+  <div class="reel-strip reel-strip-right"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span>CAMPUS IMPACT</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#prizes">Prizes</a></li>
+        <li><a href="#register" class="nav-cta">Register Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1">▶</div>
+      <div class="shape shape-2">◉</div>
+      <div class="shape shape-3">✦</div>
+      <div class="shape shape-4">⬡</div>
+      <div class="shape shape-5">▷</div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Media Innovation Challenge 2025
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="title-line">CAMPUS</span>
+        <span class="title-line accent-line">IMPACT</span>
+      </h1>
+      <p class="hero-sub reveal">Creating What's Next — For Student Creators</p>
+      <p class="hero-desc reveal">Transform from content consumer to confident creator. Learn, compete & win with your
+        team.</p>
+      <div class="hero-actions reveal">
+        <a href="#register" class="btn-primary">
+          <span>Register Your Team</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#about" class="btn-ghost">
+          <span>Learn More</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">₹399</span>
+          <span class="stat-label">Per Team</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Members/Team</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Cash</span>
+          <span class="stat-label">Prizes & Certs</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+
+          <div class="reel-video-container">
+            <video class="reel-video" autoplay muted loop playsinline webkit-playsinline>
+              <source src="/videos/Btshouseofportfolio.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-overlay">
+              <div class="reel-info">
+                <span class="reel-tag">#CampusImpact</span>
+                <p>Storytelling ✨</p>
+              </div>
+
+              <div class="reel-actions">
+                <span>♥ 2.4K</span>
+                <span>💬 180</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="phone-notch"></div>
+      </div>
+    </div> -->
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="reel-feed">
+            <div class="reel-card reel-card-1">
+              <div class="reel-gradient"></div>
+              <div class="reel-info">
+                <span class="reel-tag">#CampusImpact</span>
+                <p>Storytelling ✨</p>
+              </div>
+              <div class="reel-actions">
+                <span>♥ 2.4K</span>
+                <span>💬 180</span>
+              </div>
+            </div>
+            <div class="reel-card reel-card-2">
+              <div class="reel-gradient"></div>
+              <div class="reel-info">
+                <span class="reel-tag">#CreateWin</span>
+                <p>Videography 🎬</p>
+              </div>
+              <div class="reel-actions">
+                <span>♥ 5.1K</span>
+                <span>💬 320</span>
+              </div>
+            </div>
+            <div class="reel-card reel-card-3">
+              <div class="reel-gradient"></div>
+              <div class="reel-info">
+                <span class="reel-tag">#StudentCreator</span>
+                <p>Editing Pro 🔥</p>
+              </div>
+              <div class="reel-actions">
+                <span>♥ 8.9K</span>
+                <span>💬 540</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-notch"></div>
+      </div>
+    </div>
+ 
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">WHAT IS CAMPUS IMPACT?</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-title">
+            From <span class="gradient-text">Consumption</span><br>
+            to <span class="gradient-text">Creation</span>
+          </h2>
+          <p class="about-text">Today's students consume digital content every day, yet few get opportunities to learn
+            the skills behind creating it. Campus Impact bridges this gap by combining practical learning, creative
+            expression, and healthy competition.</p>
+          <div class="about-highlight">
+            <span class="highlight-icon">✦</span>
+            <span>Industry-relevant skills through real-world content creation</span>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="card card-orange">
+            <div class="card-icon">🎯</div>
+            <h3>Creative Competition</h3>
+            <p>Form teams, apply skills, compete in theme-based reel challenges for exciting rewards and recognition.
+            </p>
+          </div>
+          <div class="card card-blue">
+            <div class="card-icon">🚀</div>
+            <h3>Skill Development</h3>
+            <p>Practical skills in content creation, storytelling, videography, editing, and personal branding through
+              interactive workshops.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars section" id="pillars">
+    <div class="container">
+      <div class="section-label reveal">THE CORE PILLARS</div>
+      <h2 class="section-title centered reveal">Three Steps to <span class="gradient-text">Greatness</span></h2>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal" data-delay="0">
+          <div class="pillar-num">01</div>
+          <div class="pillar-icon-wrap orange">
+            <span>📚</span>
+          </div>
+          <h3>LEARN</h3>
+          <p>Expert-led workshops covering content creation, storytelling, videography, editing, and personal branding.
+          </p>
+        </div>
+        <div class="pillar-card reveal" data-delay="150">
+          <div class="pillar-num">02</div>
+          <div class="pillar-icon-wrap yellow">
+            <span>🎬</span>
+          </div>
+          <h3>CREATE</h3>
+          <p>Teams collaborate to plan, produce, and publish original reels based on the competition theme and
+            guidelines.</p>
+        </div>
+        <div class="pillar-card reveal" data-delay="300">
+          <div class="pillar-num">03</div>
+          <div class="pillar-icon-wrap teal">
+            <span>🏆</span>
+          </div>
+          <h3>COMPETE</h3>
+          <p>Showcase creativity before a jury panel and compete for recognition, certificates, and cash prizes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="roadmap section" id="roadmap">
+    <div class="container">
+      <div class="section-label reveal">THE JOURNEY</div>
+      <h2 class="section-title centered reveal">Campus Impact <span class="gradient-text">Roadmap</span></h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal" data-delay="0">
+          <div class="tl-dot orange"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q1</span>
+            <div class="tl-icon">💡</div>
+            <h4>Workshop Sessions</h4>
+            <p>Hands-on workshops covering content creation, storytelling, videography, editing, and personal branding.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="100">
+          <div class="tl-dot blue"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q2</span>
+            <div class="tl-icon">👥</div>
+            <h4>Team Formation</h4>
+            <p>Form teams of four members encouraging collaboration, creativity, and effective execution.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="200">
+          <div class="tl-dot yellow"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q3</span>
+            <div class="tl-icon">🎯</div>
+            <h4>Theme Launch</h4>
+            <p>Official challenge theme announced along with competition guidelines and evaluation criteria.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="300">
+          <div class="tl-dot teal"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q4</span>
+            <div class="tl-icon">🎥</div>
+            <h4>Content Creation</h4>
+            <p>Teams develop concepts, shoot, edit, and publish original reels within the competition timeline.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="400">
+          <div class="tl-dot pink"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q5</span>
+            <div class="tl-icon">⚖️</div>
+            <h4>Jury Evaluation</h4>
+            <p>Industry professionals evaluate submissions based on creativity, storytelling, originality, and impact.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" data-delay="500">
+          <div class="tl-dot gold"></div>
+          <div class="tl-card">
+            <span class="tl-step">Q6</span>
+            <div class="tl-icon">🏆</div>
+            <h4>Awards & Recognition</h4>
+            <p>Top teams receive cash prizes, certificates, recognition, and opportunities to showcase their work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS -->
+  <section class="workshops section" id="workshops">
+    <div class="container">
+      <div class="section-label reveal">WHAT YOU'LL LEARN</div>
+      <h2 class="section-title centered reveal">Workshop <span class="gradient-text">Modules</span></h2>
+      <div class="workshops-grid">
+        <div class="workshop-card wc-orange reveal" data-delay="0">
+          <div class="wc-num">01</div>
+          <div class="wc-icon">📊</div>
+          <h3>Content Strategy</h3>
+          <p>Identify audiences, generate content ideas, structure stories, and create engaging reels with purpose and
+            impact.</p>
+          <div class="wc-tag">Foundation</div>
+        </div>
+        <div class="workshop-card wc-blue reveal" data-delay="100">
+          <div class="wc-num">02</div>
+          <div class="wc-icon">🎥</div>
+          <h3>Videography</h3>
+          <p>Mobile filmmaking techniques including framing, camera angles, lighting, movement, and visual storytelling.
+          </p>
+          <div class="wc-tag">Production</div>
+        </div>
+        <div class="workshop-card wc-yellow reveal" data-delay="200">
+          <div class="wc-num">03</div>
+          <div class="wc-icon">✂️</div>
+          <h3>Editing</h3>
+          <p>Reel editing fundamentals, transitions, audio synchronization, pacing, and content optimized for social
+            media.</p>
+          <div class="wc-tag">Post-Production</div>
+        </div>
+        <div class="workshop-card wc-teal reveal" data-delay="300">
+          <div class="wc-num">04</div>
+          <div class="wc-icon">⭐</div>
+          <h3>Personal Branding</h3>
+          <p>Build a professional digital presence, showcase your skills, and grow your influence across social
+            platforms.</p>
+          <div class="wc-tag">Growth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIZES / STAKEHOLDERS -->
+  <section class="prizes section" id="prizes">
+    <div class="container">
+      <div class="section-label reveal">REWARDS</div>
+      <h2 class="section-title centered reveal">Impact for <span class="gradient-text">Everyone</span></h2>
+      <div class="prizes-grid">
+        <div class="prize-card reveal" data-delay="0">
+          <div class="prize-emoji">🎓</div>
+          <h3>Students</h3>
+          <ul>
+            <li>💰 Cash Prizes</li>
+            <li>📜 Certificates</li>
+            <li>🌟 Recognition</li>
+            <li>🎯 Industry Skills</li>
+            <li>📱 Build Your Portfolio</li>
+          </ul>
+        </div>
+        <div class="prize-card featured reveal" data-delay="150">
+          <div class="prize-badge">MAIN EVENT</div>
+          <div class="prize-emoji">🏆</div>
+          <h3>Top Teams Win</h3>
+          <p class="prize-desc">Cash prizes, certificates, recognition, and the opportunity to showcase your work to a
+            wider audience including industry professionals.</p>
+          <a href="#register" class="btn-primary small">Register Now →</a>
+        </div>
+        <div class="prize-card reveal" data-delay="300">
+          <div class="prize-emoji">🏛️</div>
+          <h3>Colleges</h3>
+          <ul>
+            <li>🤝 Industry-Academia Links</li>
+            <li>🎤 Campus Visibility</li>
+            <li>🎓 Student Engagement</li>
+            <li>✨ Promote Campus Talent</li>
+            <li>📚 Experiential Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION -->
+  <section class="register section" id="register">
+    <div class="container">
+      <div class="section-label reveal">JOIN NOW</div>
+      <h2 class="section-title centered reveal">Register Your <span class="gradient-text">Team</span></h2>
+      <p class="register-sub reveal">Fill in your team details and complete payment to secure your spot</p>
+
+      <div class="register-wrapper reveal">
+        <div class="register-info">
+          <div class="info-card">
+            <h4>📋 Registration Details</h4>
+            <div class="info-row">
+              <span>Team Size</span>
+              <strong>4 Members</strong>
+            </div>
+            <div class="info-row">
+              <span>Registration Fee</span>
+              <strong class="price">₹399</strong>
+            </div>
+            <div class="info-row">
+              <span>Eligibility</span>
+              <strong>College Students Only</strong>
+            </div>
+            <div class="info-row">
+              <span>Submission Window</span>
+              <strong>10–15 Days</strong>
+            </div>
+          </div>
+          <div class="rules-card">
+            <h4>📌 Rules at a Glance</h4>
+            <div class="rule-item">✅ All 4 members must appear in the reel</div>
+            <div class="rule-item">✅ Original content only — no copyright infringement</div>
+            <div class="rule-item">✅ One submission per team</div>
+            <div class="rule-item">✅ Must align with announced theme</div>
+            <div class="rule-item">✅ Valid college ID may be required</div>
+          </div>
+        </div>
+
+        <div class="register-form-wrap">
+          <form id="registrationForm" class="reg-form">
+            <div class="form-section-title">Team Information</div>
+            <div class="form-group">
+              <label for="teamName">Team Name *</label>
+              <input type="text" id="teamName" name="teamName" placeholder="Enter your team name" required>
+            </div>
+            <div class="form-group">
+              <label for="college">College / University *</label>
+              <input type="text" id="college" name="college" placeholder="Your college name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="teamLeader">Team Leader Name *</label>
+                <input type="text" id="teamLeader" name="teamLeader" placeholder="Full name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">WhatsApp Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="team@email.com" required>
+            </div>
+
+            <div class="form-section-title">Team Members</div>
+            <div class="members-grid">
+              <div class="form-group">
+                <label>Member 2 Name</label>
+                <input type="text" name="member2" placeholder="Member 2 full name">
+              </div>
+              <div class="form-group">
+                <label>Member 3 Name</label>
+                <input type="text" name="member3" placeholder="Member 3 full name">
+              </div>
+              <div class="form-group">
+                <label>Member 4 Name</label>
+                <input type="text" name="member4" placeholder="Member 4 full name">
+              </div>
+              <div class="form-group">
+                <label>Department / Year</label>
+                <input type="text" name="department" placeholder="e.g. B.Tech CSE, 2nd Year">
+              </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="agree" name="agree" required>
+              <label for="agree">I confirm all team members are currently enrolled college students and agree to the
+                competition rules and guidelines.</label>
+            </div>
+
+            <button type="submit" class="btn-pay" id="payBtn">
+              <span id="payBtnText">💳 Pay ₹399 & Register</span>
+              <div class="pay-loader" id="payLoader" style="display:none;">
+                <div class="spinner"></div>
+                <span>Processing...</span>
+              </div>
+            </button>
+
+            <div class="payment-note">
+              <span>🔒 Secure payment via Razorpay · UPI, Cards, Net Banking accepted</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">✦</span>
+          <span class="brand-name">CAMPUS IMPACT</span>
+          <p>Creating What's Next — A Media Innovation Challenge for Student Creators</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#workshops">Workshops</a>
+          <a href="#register">Register</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Campus Impact. All rights reserved.</span>
+        <span>Built for student creators everywhere 🎬</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Payment Success Modal -->
+  <div class="modal-overlay" id="successModal" style="display:none">
+    <div class="modal">
+      <div class="modal-icon">🎉</div>
+      <h3>Registration Successful!</h3>
+      <p>Your team has been registered for Campus Impact. Check your email for confirmation details.</p>
+      <div class="modal-payment-id" id="modalPaymentId"></div>
+      <button class="btn-primary small" onclick="closeModal()">Continue ✓</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="errorModal" style="display:none">
+    <div class="modal error-modal">
+      <div class="modal-icon">⚠️</div>
+      <h3>Payment Issue</h3>
+      <p id="errorMessage">Something went wrong. Please try again.</p>
+      <button class="btn-primary small" onclick="closeErrorModal()">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Razorpay SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

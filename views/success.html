@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Successful — Campus Impact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .confetti-bg {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(255,107,0,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 100%, rgba(0,200,220,0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .success-card {
+      text-align: center;
+      max-width: 520px;
+      padding: 3rem 2.5rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,107,0,0.3);
+      border-radius: 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .success-icon {
+      font-size: 5rem;
+      margin-bottom: 1.5rem;
+      animation: bounce 0.8s ease;
+    }
+    @keyframes bounce {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.2); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 0.05em;
+      background: linear-gradient(135deg, #FF6B00, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    p { color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1rem; }
+    .payment-ref {
+      background: rgba(255,107,0,0.1);
+      border: 1px solid rgba(255,107,0,0.3);
+      border-radius: 10px;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      color: #FF6B00;
+      margin: 1.5rem 0;
+      word-break: break-all;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      background: linear-gradient(135deg, #FF6B00, #FF9A00);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: scale(1.04); }
+    .steps {
+      margin: 2rem 0;
+      text-align: left;
+    }
+    .step-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="confetti-bg"></div>
+  <div class="success-card">
+    <div class="success-icon">🎬</div>
+    <h1>YOU'RE IN!</h1>
+    <p>Your team registration for Campus Impact is confirmed. Get ready to create, compete, and win!</p>
+    <div class="payment-ref" id="payRef">Payment ID: Loading...</div>
+    <div class="steps">
+      <div class="step-item"><span>📧</span> Check your email for registration confirmation</div>
+      <div class="step-item"><span>📱</span> Follow our social handles for theme announcement</div>
+      <div class="step-item"><span>🎓</span> Attend the workshop sessions when notified</div>
+      <div class="step-item"><span>🏆</span> Compete and win exciting prizes!</div>
+    </div>
+    <a href="/" class="btn">Back to Home 🏠</a>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const payId = params.get('payment_id');
+    if (payId) {
+      document.getElementById('payRef').textContent = 'Payment ID: ' + payId;
+    } else {
+      document.getElementById('payRef').textContent = 'Registration Confirmed ✓';
+    }
+  </script>
+</body>
+</html>
